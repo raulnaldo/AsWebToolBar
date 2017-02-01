@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app='AsToolBarModule'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/VarelaRound.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>No Cookie Shopping List</title>
+  </head>
+  <body>
+    <ui-view></ui-view>
+
+    <loading-spinner></loading-spinner>
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/toolbar/toolbar.module.js"></script>
+    <script src="src/spinner/spinner.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- Module artifacts -->
+    <script src="src/toolbar/toolbar.controller.js"></script>
+    <script src="src/toolbar/toolbar.service.js"></script>    
+
+    <!-- 'Spinner' module artifacts -->
+    <script src="src/spinner/loadingspinner.component.js"></script>
+
+  </body>
+</html>
